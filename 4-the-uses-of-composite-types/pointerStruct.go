@@ -5,16 +5,15 @@ import (
 )
 
 type myStruct struct {
-	Name string
+	Name 	string
 	Surname string
-	Height int32
+	Height 	int32
 }
 
 func createStruct(n, s string, h int32) *myStruct {
 	if h > 300 {
 		h = 0
 	}
-
 	return &myStruct{n, s, h}
 }
 
@@ -22,10 +21,8 @@ func retStructure(n, s string, h int32) myStruct {
     if h > 300 {
         h = 0
     }
-
     return myStruct{n, s, h}
 }
-
 
 func main() {
 	s1 := createStruct("Ivan", "Ivanov", 123)
