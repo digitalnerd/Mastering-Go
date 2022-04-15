@@ -4,6 +4,8 @@ import (
 	"fmt"
 )
 
+// As you can see from the implementation of funReturnFun(), its return value is an
+// anonymous function (func() int).
 func funcReturnFunc() func() int {
 	i := 0
 	return func() int {
